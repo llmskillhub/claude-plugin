@@ -1,0 +1,15 @@
+{
+  "name": "llmskillhub",
+  "description": "The LLM SkillHub plugin: a human-reviewed catalogue of agent skills",
+  "owner": {
+    "name": "LLM SkillHub",
+    "email": "hello@llmskillhub.com"
+  },
+  "plugins": [
+    {
+      "name": "llmskillhub",
+      "source": "./",
+      "description": "Find, read and install human-reviewed agent skills, and publish your own"
+    }
+  ]
+}
