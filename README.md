@@ -30,9 +30,19 @@ claude plugin install llmskillhub@llmskillhub
 Installing skills into Claude Code, running evals and publishing need the CLI:
 `npm install -g llmskillhub`.
 
-## Privacy
+## Data handling
 
-Searches and reads go to `api.llmskillhub.com`. See the
+The plugin reads no personal data. What leaves your machine, and where:
+
+| What | Sent to | Through | Kept |
+|---|---|---|---|
+| Catalogue searches and file reads | `api.llmskillhub.com` | the `llmskillhub` MCP server | Not stored. The API logs one line per request (method, path, status, duration), with no query text, IP address or user agent |
+| Skills and evals you choose to publish (`llmsh publish`) | `api.llmskillhub.com` | the `llmsh` CLI, signed in with your account | Until you remove them; approved public versions stay downloadable for anyone who pinned them |
+| Eval runs you start (`llmsh eval run`) | `api.llmskillhub.com` | the `llmsh` CLI | With the skill's run history |
+| Installing the CLI (`npm install -g llmskillhub`) | `registry.npmjs.org` | npm | npm's own policy |
+
+Nothing is sent without you asking: the skills show each command and wait
+for you before installing or publishing anything. See the
 [privacy policy](https://llmskillhub.com/privacy) and
 [terms](https://llmskillhub.com/terms).
 
