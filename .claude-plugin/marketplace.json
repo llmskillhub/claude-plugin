@@ -9,7 +9,7 @@
     {
       "name": "llmskillhub",
       "source": "./",
-      "description": "Find, read and install human-reviewed agent skills, and publish your own"
+      "description": "Find, read and install human-reviewed agent skills, test them with evals, and publish your own"
     }
   ]
 }

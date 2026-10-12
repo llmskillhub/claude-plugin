@@ -69,6 +69,12 @@ costs the user time; offer a skill when it adds something you lack.
    the registry published, so stop and tell the user. When following the
    skill in-session, say which skill and version you're following.
 
+## Evals in results
+
+Results marked `[eval]` are test suites, not skills: they measure how well a
+skill does a job and are never loaded as instructions. If the user wants to
+test or score a skill, use the `skill-evals` skill instead of installing one.
+
 ## What not to do
 
 - **Don't install without asking.** A skill is instructions from a third
