@@ -36,7 +36,7 @@ The plugin reads no personal data. What leaves your machine, and where:
 
 | What | Sent to | Through | Kept |
 |---|---|---|---|
-| Catalogue searches and file reads | `api.llmskillhub.com` | the `llmskillhub` MCP server | Not stored. The API logs one line per request (method, path, status, duration), with no query text, IP address or user agent |
+| Catalogue searches and file reads | `api.llmskillhub.com` | the `llmskillhub` MCP server | The search text is in the request body and isn't logged or stored. Each request's IP address and user agent are in the server's request log, deleted after 30 days |
 | Skills and evals you choose to publish (`llmsh publish`) | `api.llmskillhub.com` | the `llmsh` CLI, signed in with your account | Until you remove them; approved public versions stay downloadable for anyone who pinned them |
 | Eval runs you start (`llmsh eval run`) | `api.llmskillhub.com` | the `llmsh` CLI | With the skill's run history |
 | Installing the CLI (`npm install -g llmskillhub`) | `registry.npmjs.org` | npm | npm's own policy |
