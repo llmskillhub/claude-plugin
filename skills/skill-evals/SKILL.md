@@ -35,9 +35,10 @@ Two roles are kept apart:
 
 ### Check the tools first
 
-1. Run `llmsh --version`. Eval commands need `llmsh` 0.9.0 or later
-   (`npm install -g llmskillhub@latest`). Attaching and running need a
-   signed-in skill owner: `llmsh whoami`, else `llmsh login`.
+1. Run `llmsh --version`. Eval commands need `llmsh` 0.9.0 or later. If
+   it's older or missing, ask the user to install or upgrade the CLI
+   (`npm install -g llmskillhub`). Attaching and running need a signed-in
+   skill owner: `llmsh whoami`, else `llmsh login`.
 
 ### Find an eval
 
@@ -159,8 +160,8 @@ Two roles are kept apart:
 - **Don't claim an eval proves a skill is safe or correct.** It measures the
   cases it contains, judged by its rubric. Say which eval and which version.
 - **Avoid `setup`, `sandbox` and `files` fields in samples** unless the eval
-  truly needs them. They execute or fetch content, so the review counts and
-  flags every sample that uses them, and a `files` entry with a URL is the
+  truly needs them. They run code or pull in content from outside the
+  package, so the review counts and flags every sample that uses them, and a `files` entry with a URL is the
   first thing a reviewer sees.
 - **Don't attach or run evals on skills the user doesn't own.** The server
   refuses it; say why instead of retrying.

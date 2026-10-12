@@ -1,7 +1,7 @@
 {
   "name": "llmskillhub",
   "displayName": "LLM SkillHub",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Find, read and install human-reviewed agent skills from llmskillhub.com, test them with evals, and publish your own skills and evals.",
   "author": {
     "name": "LLM SkillHub",
